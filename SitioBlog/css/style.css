@@ -1,0 +1,316 @@
+/*ESCRITORIO PC 1366 PX*/
+*{
+    /*font-family: 'Chewy', cursive;*/
+    font-family: 'Open Sans', sans-serif;
+}
+ul, ol {
+    list-style: none;
+}
+a:visited,a:link,a:focus,a:hover,a:active{
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: rgba(0,0,0,.5);
+}
+header .logotipo{
+    width: 35%;
+}
+.redes ul li i{
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+.redes ul li i.fa-facebook-f{
+    background: #3c5a98;
+}
+.redes ul li i.fa-instagram{
+    background: #833ab4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.fa-bars{
+    font-size: 27px;
+    color: white;
+}
+.redesMovil{
+    position: fixed;
+    bottom: -10px;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%,0);
+}
+/*BANNER*/
+.fade-slider{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.bannerEstatico {
+    background: rgba(0,0,0,0);
+}
+
+/*MENU*/
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    overflow-x: hidden;
+    font-weight: 100;
+    display: none;
+    font-size: 34px;
+    line-height: 70px;
+}
+.btn-close{
+    position: absolute;
+    top: 100px;
+    right: 25%;
+    color: white;
+}
+.menu .nav{
+    margin-top: 10%;
+
+}
+
+/*GRID*/
+.grid figure {
+    position: relative;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 8px solid white;
+    border-right: 8px solid white;
+    cursor: pointer;
+    transition: 1s all;
+}
+.grid .columna1 {
+    width: 40%;
+}
+.grid .photo1 {
+    height: 400px;
+    background: url(../img/banner04.jpg);
+    background-size: cover;
+    background-position: left;
+}
+.grid .photo2 {
+    height: 300px;
+    background: url(../img/banner03.jpg);
+    background-size: cover;
+    background-position: left;
+}
+.grid .photo3 {
+    height: 300px;
+    background: url(../img/banner03.jpg);
+    background-size: cover;
+    background-position: left;
+}
+.grid .photo4 {
+    height: 300px;
+    background: url(../img/banner03.jpg);
+    background-size: cover;
+    background-position: left;
+}
+.grid .photo5 {
+    height: 400px;
+    background: url(../img/banner03.jpg);
+    background-size: cover;
+    background-position: left;
+}
+.grid .photo6 {
+    height: 200px;
+    background: url(../img/banner03.jpg);
+    background-size: cover;
+    background-position: left;
+}
+.grid figure p{
+    position: absolute;
+    left: 0px;
+    bottom: -16px;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    color: white;
+    font-weight: 100;
+    font-size: 20px;
+}
+.grid figure p:hover {
+    background: rgba(456,76,34,.7);
+}
+
+/*CONTENIDO*/
+.contenidoInicio{
+    transform: translate(0%, -2%);
+}
+.introArticulo {
+    position: relative;
+}
+.fecha{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    padding: 5px 10px;
+    color: #aaa;
+    font-size: 14px;
+    background: url(../img/globo.jpg);
+    background-size: cover;
+    background-position: center top;
+    height: 40px;
+}
+
+/*TABLET H 1024 PX*/
+@media (max-width:1199px) and (min-width:992px){
+    .menu .nav{
+        margin-top: 15%;
+    
+    }
+
+
+}
+/*TABLET V 768 PX*/
+@media (max-width:991px) and (min-width:768px){
+    header .logotipo{
+        width: 55%;
+    }
+    .btn-close{
+        top: 70px;
+    }
+    .menu .nav{
+        margin-top: 20%;
+    
+    }
+    .grid .photo1 {
+        height: 300px;
+        
+    }
+    .grid .photo2 {
+        height: 200px;
+      
+    }
+    .grid .photo3 {
+        height: 200px;
+       
+    }
+    .grid .photo4 {
+        height: 200px;
+       
+    }
+    .grid .photo5 {
+        height: 300px;
+        
+    }
+    .grid figure p{
+        font-size: 18px;
+    }
+    .fecha{
+        top: -488px;
+    }
+
+}
+/*MOVIL H 576 PX*/
+@media (max-width:767px) and (min-width:576px){
+    header .logotipo{
+        width: 65%;
+    }
+    .fade-slider{
+        height: 72px;
+    }
+    .btn-close{
+        top: 50px;
+        left: 25%;
+    }
+    .menu .nav{
+        margin-top: 25%;
+    
+    }
+    .grid .columna1 {
+        width: 50%;
+    }
+    .grid .photo1 {
+        height: 200px;
+        
+    }
+    .grid .photo2 {
+        height: 200px;
+      
+    }
+    .grid .photo3 {
+        height: 200px;
+       
+    }
+    .grid .photo4 {
+        height: 200px;
+       
+    }
+    .grid .photo5 {
+        height: 200px;
+    }
+    .grid figure p{
+        font-size: 16px;
+    }
+    .fecha{
+        top: -427px;
+    }
+}
+/*MOVIL V 320 PX*/
+@media (max-width:575px){
+    header .logotipo{
+        width: 95%;
+    }
+    .fade-slider{
+        height: 51px;
+    }
+    .btn-close{
+        top: 10px;
+        left: 5%;
+    }
+    .menu .nav{
+        margin-top: 25%;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .grid .columna1 {
+        width: 50%;
+    }
+    .grid .photo1 {
+        height: 120px;
+        
+    }
+    .grid .photo2 {
+        height: 120px;
+      
+    }
+    .grid .photo3 {
+        height: 120px;
+       
+    }
+    .grid .photo4 {
+        height: 120px;
+       
+    }
+    .grid .photo5 {
+        height: 120px;
+    }
+    .grid .photo6 {
+        height: 120px;
+    }
+    .grid figure p{
+        font-size: 14px;
+    }
+    .fecha{
+        top: -227px;
+    }
+    
+}
