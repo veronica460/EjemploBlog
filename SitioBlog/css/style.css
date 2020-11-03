@@ -215,7 +215,8 @@ header .logotipo{
         font-size: 18px;
     }
     .fecha{
-        top: -488px;
+        top: -530px;
+        height: 35px;
     }
 
 }
@@ -261,7 +262,7 @@ header .logotipo{
         font-size: 16px;
     }
     .fecha{
-        top: -427px;
+        top: -417px;
     }
 }
 /*MOVIL V 320 PX*/
@@ -310,7 +311,8 @@ header .logotipo{
         font-size: 14px;
     }
     .fecha{
-        top: -227px;
+        top: -264px;
+        
     }
     
 }
