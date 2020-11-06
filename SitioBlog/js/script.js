@@ -49,3 +49,13 @@ $(".grid figure").mouseover(function(){
 $(".grid figure").mouseout(function(){
     $(this).css({"background-position":"left top"})
 })
+
+/**PAGINACION */
+$(".pagination").twbsPagination({
+    totalPages:10,
+    first: 'Primero',
+    last: 'Último',
+    next: '<i class="fas fa-angle-right"></i>',
+    prev: '<i class="fas fa-angle-left"></i>',
+    visiblePages: 4
+});

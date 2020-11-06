@@ -152,7 +152,7 @@ header .logotipo{
 
 /*CONTENIDO*/
 .contenidoInicio{
-    transform: translate(0%, -2%);
+    /*transform: translate(0%, -2%);*/
 }
 .introArticulo {
     position: relative;
@@ -169,6 +169,83 @@ header .logotipo{
     background-position: center top;
     height: 40px;
 }
+
+.page-item.active .page-link{
+    background: #302b63;
+    color: white;
+    border: 1px solid #bbb;
+}
+.page-link{
+    color: #777;
+}
+
+/*GRID FOOTER CATEGORIAS*/
+footer{
+    background: black;
+}
+.gridFooter figure {
+    position: relative;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+    cursor: pointer;
+    transition: 1s all;
+}
+.gridFooter .columna1 {
+    width: 40%;
+}
+.gridFooter .photo1 {
+    height: 200px;
+    background: url(../img/banner04.jpg);
+    background-size: cover;
+    background-position: left;
+}
+.gridFooter .photo2 {
+    height: 100px;
+    background: url(../img/banner03.jpg);
+    background-size: cover;
+    background-position: left;
+}
+.gridFooter .photo3 {
+    height: 100px;
+    background: url(../img/banner03.jpg);
+    background-size: cover;
+    background-position: left;
+}
+.gridFooter .photo4 {
+    height: 100px;
+    background: url(../img/banner03.jpg);
+    background-size: cover;
+    background-position: left;
+}
+.gridFooter .photo5 {
+    height: 200px;
+    background: url(../img/banner03.jpg);
+    background-size: cover;
+    background-position: left;
+}
+.gridFooter .photo6 {
+    height: 200px;
+    background: url(../img/banner03.jpg);
+    background-size: cover;
+    background-position: left;
+}
+.gridFooter figure p{
+    position: absolute;
+    left: 0px;
+    bottom: -16px;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    color: white;
+    font-weight: 100;
+    font-size: 15px;
+}
+.gridFooter figure p:hover {
+    background: rgba(456,76,34,.7);
+}
+
+
 
 /*TABLET H 1024 PX*/
 @media (max-width:1199px) and (min-width:992px){
@@ -215,8 +292,14 @@ header .logotipo{
         font-size: 18px;
     }
     .fecha{
-        top: -530px;
+        top: -373px;
         height: 35px;
+    }
+    .gridFooter figure {
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        border-left: 2px solid white;
+        border-right: 2px solid white;
     }
 
 }

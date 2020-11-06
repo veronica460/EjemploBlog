@@ -35,6 +35,8 @@
     <!--JdSlider-->
     <script src="js/plugins/jquery.jdSlider-latest.js"></script>
 
+    <script src="js/plugins/pagination.min.js"></script>
+
 </head>
 <body>
     <!--CABECERA-->
@@ -177,11 +179,11 @@
     </div>
 
     <!--CONTENIDO-->
-    <div class="container-fluid bg-white contenidoInicio">
+    <div class="container-fluid bg-white contenidoInicio pb-4">
         <div class="container">
             <div class="row">
                 <!--COLUMNA IZQUIERDA-->
-                <div class="col-12 col-lg-9 p-0 pr-lg-5">
+                <div class="col-12 col-md-8 col-lg-9 p-0 pr-lg-5">
                     <!--ARTICULO 01-->
                     <div class="row">
                         <div class="col-12 col-lg-5">
@@ -234,9 +236,15 @@
                             
                         </div>
                     </div>
+                    <hr class="mb-2 mb-lg-5" style="border: 1px solid #746784;">
+
+                    <div class="container d-none d-md-block">
+                        <ul class="pagination justify-content-center"></ul>
+                    </div>
+
                 </div>
                 <!--COLUMNA DERECHA-->
-                <div class="col-12 d-none d-lg-block col-lg-3">
+                <div class="col-12 col-md-4 pt-md-5 pt-lg-0 d-none d-md-block col-lg-3">
                     <!--SOBRE MI-->
                     <div class="sobreMi">
                         <h4>Perfil</h4>
@@ -266,6 +274,71 @@
         </div>
     </div>
    
+    <!--FOOTER-->
+    <footer class="container-fluid py-5 d-none d-md-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-6">
+                    <div class="p-1 bg-white gridFooter">
+                        <div class="container p-0">
+                            <div class="d-flex">
+                                <div class="d-flex flex-column columna1">
+                                    <figure class="p-2 m-0 photo1">
+                                        <p class="text-uppercase p-1 p-md-3 p-xl-1">Imagen</p>
+                                    </figure>
+                                    <figure class="p-2 m-0 photo2">
+                                        <p class="text-uppercase p-1 p-md-3 p-xl-1">Imagen</p>
+                                    </figure>
+                                   
+                                </div>
+                                
+                                <div class="d-flex flex-column flex-fill columna2">
+                                    <div class="d-block d-md-flex">
+                                        <figure class="p-2 m-0 flex-fill photo3">
+                                            <p class="text-uppercase p-1 p-md-3 p-xl-1">Imagen</p>
+                                        </figure>
+                                        <figure class="p-2 m-0 flex-fill photo4">
+                                            <p class="text-uppercase p-1 p-md-3 p-xl-1">Imagen</p>
+                                        </figure>
+                                    </div>
+                                    
+                                    <figure class="p-2 m-0 photo5">
+                                        <p class="text-uppercase p-1 p-md-3 p-xl-1">Imagen</p>
+                                    </figure>
+                
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-4 pt-5">
+                    <h6 class="text-white">Registrate</h6>
+                    <div class="input-group my-4">
+                        <input type="text" class="form-control" placeholder="Ingresa email">
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-dark text-white">Inscribirse</span>
+                        </div>
+                    </div>
+                    <div class="p-0 w-100 pt-2">
+                        <ul class="d-flex justify-content-left p-0">
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-facebook-f lead float-left rounded-circle text-white mr-3 mr-sm-4"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-instagram lead float-left rounded-circle text-white mr-3 mr-sm-4"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="js/script.js"></script>
 
 </body>
