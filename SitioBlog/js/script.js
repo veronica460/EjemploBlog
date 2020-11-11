@@ -59,3 +59,16 @@ $(".pagination").twbsPagination({
     prev: '<i class="fas fa-angle-left"></i>',
     visiblePages: 4
 });
+
+/**SCROLLORAMA */
+let controller = $.superscrollorama();
+controller.addTween(".contenidoInicio.container", TweenMax.from(
+    $(".contenidoInicio.container"), .5, {css:{opacity: 0}}
+))
+
+/**SCROLL UP */
+$.scrollUp({
+    scrollText: "",
+    scrollSpeed: 2000,
+    easingType: "easeOutQuint"
+})
