@@ -72,3 +72,49 @@ $.scrollUp({
     scrollSpeed: 2000,
     easingType: "easeOutQuint"
 })
+
+/**PRELOAD*/
+$("body").css({"overflow-y":"hidden"});
+
+let cargarImg = $("img");
+let cargarScript = $("script");
+let cargarCss = $("link");
+let cargarVideos = $("video");
+let cargarAudios = $("audio");
+let totalObjetos = [];
+let numItem = 0;
+let valorPorcentaje = 0;
+let incremento = 0;
+let numCarga = 0;
+
+totalObjetos.push(cargarImg,cargarScript,cargarCss,cargarVideos,cargarAudios);
+
+totalObjetos.forEach(funcionForEach);
+
+function funcionForEach(item,index){
+    for(let i = 0; i < item.length; i++){
+        
+        numItem++;
+        valorPorcentaje = 100/numItem;
+       
+    }
+    for(let i = 0; i < item.length; i++){
+           preload(i,item); 
+    }
+}
+
+function preload(i,item){
+    setTimeout(function(){
+            $(item[i]).ready(function(){
+                numCarga++;
+            incremento = Math.floor(numCarga * valorPorcentaje);
+            $("#porcentajeCarga").html(incremento+"%");
+            $("#rellenoCarga").css({"width":incremento+"%"});
+
+            if(incremento >= 100){
+                $("#preload").delay(350).fadeOut("slow");
+                $("body").delay(350).css({"overflow-y":"scroll"})
+            }
+        })
+    },i*100)
+}
