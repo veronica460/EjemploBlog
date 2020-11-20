@@ -42,12 +42,16 @@ $(".btn-close").click(function(){
 })
 
 /**GRID DE CATEGORIAS */
-$(".grid figure").mouseover(function(){
+$(".grid figure, .gridFooter figure").mouseover(function(){
     $(this).css({"background-position":"right bottom"})
 })
 
-$(".grid figure").mouseout(function(){
+$(".grid figure, .gridFooter figure").mouseout(function(){
     $(this).css({"background-position":"left top"})
+})
+$(".grid figure, .gridFooter figure").click(function(){
+    let vinculo = $(this).attr("vinculo");
+    window.location = vinculo;
 })
 
 /**PAGINACION */

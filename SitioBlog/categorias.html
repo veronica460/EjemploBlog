@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+
+    <title>Sitio Web</title>
+
+    <link rel="icon" href="img/icono.jpg">
+
+    <!--PLUGINS DE CSS-->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" 
+    integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <!--JdSlider-->
+    <link rel="stylesheet" href="css/plugins/jquery.jdSlider.css">
+    <link rel="stylesheet" href="css/style.css">
+   
+    <!--PLUGINS DE JS-->
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!--JdSlider-->
+    <script src="js/plugins/jquery.jdSlider-latest.js"></script>
+
+    <script src="js/plugins/pagination.min.js"></script>
+
+    <script src="js/plugins/jquery.superscrollorama.js"></script>
+    <script src="js/plugins/TweenMax.min.js"></script>
+
+    <script src="js/plugins/scrollUP.js"></script>
+    <script src="js/plugins/jquery.easing.js"></script>
+
+</head>
+<body>
+    <!--PRELOAD-->
+    <div id="preload">
+        <div id="porcentajeCarga">0%</div>
+        
+        <div id="lineaCarga">
+            <div id="rellenoCarga"></div>
+        </div>
+        
+        <div id="estadoCarga"></div>
+    </div>
+    <!--CABECERA-->
+    <header class="container-fluid">
+        <div class="container p-0">
+            <div class="row">
+                <!--LOGO-->
+                <div class="col-10 col-sm-11 col-md-8 col-lg-7 pt-1 pt-lg-2 p-xl-0">
+                    <a href="index.html">
+                        <img src="img/logotipo-negativo.png" alt="Logo" class="img-fluid logotipo">
+                    </a>
+                </div>
+                <!--REDES SOCIALES-->
+                <div class="d-none d-md-block col-md-2 col-lg-3 redes">
+                    <ul class="d-flex justify-content-end pt-2">
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-facebook-f lead float-left rounded-circle text-white"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-instagram lead float-left rounded-circle text-white"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--BOTÓN MENÚ-->
+                <div class="col-2 col-sm-1 col-md-2 col-lg-2 d-flex justify-content-end pt-2">
+                    <div class="mt-0 mt-sm-2 mt-md-0 pr-0 pr-sm-2 pr-lg-3 mt-1">
+                        <i class="fas fa-bars lead"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--REDES SOCIALES PARA MOVIL-->
+    <div class="d-block d-md-none redes redesMovil p-0 bg-white w-100 pt-2">
+        <ul class="d-flex justify-content-center p-0">
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-facebook-f lead float-left rounded-circle text-white mr-3 mr-sm-4"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-instagram lead float-left rounded-circle text-white mr-3 mr-sm-4"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!--BANNER-->
+    <div class="bannerEstatico">
+
+    </div>
+
+    <section class="jd-slider fade-slider">
+            <div class="slider-inner">
+                <ul class="slide-area">
+                    <li>
+                        <div class="d-none d-md-block textoBanner">
+                            <h1>Watch how we work</h1>
+                            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quae porro similique</h5>
+                        </div>
+
+                        <img src="img/bannerGrande01.jpg" alt="Imagenuno" class="img-fluid">
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="controller d-none">
+                <a class="auto" href="#">
+                    <i class="fas fa-play fa-xs"></i>
+                    <i class="fas fa-pause fa-xs"></i>
+                </a>
+                <div class="indicate-area"></div>
+            </div>
+    </section>
+    
+    <!--MENU-->
+    <div class="container-fluid menu">
+        <a href="#" class="btn-close">X</a>
+        <ul class="nav flex-column text-center">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="categorias.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="categorias.html">Clientes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="categorias.html">Productos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="categorias.html">Portafolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="categorias.html">Lima</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="categorias.html">Lima</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="categorias.html">Lima</a>
+            </li>
+        </ul>
+    </div>
+    
+   
+
+    <!--CONTENIDO-->
+    <div class="container-fluid bg-white contenidoInicio py-4">
+        <div class="container">
+
+            <!--BREADCRUMB-->
+            <ul class="breadcrumb bg-white p-0 mb-4">
+                <li class="breadcrumb-item inicio"><a href="index.html">Inicio</a></li>
+                <li class="breadcrumb-item active">Imagen 1</li>
+            </ul>
+
+            
+            <div class="row">
+                <!--COLUMNA IZQUIERDA-->
+                <div class="col-12 col-md-8 col-lg-9 p-0 pr-lg-5">
+                    <!--ARTICULO 01-->
+                    <div class="row">
+                        <div class="col-12 col-lg-5">
+                            <a href="articulos.html"><h5 class="d-block d-lg-none py-5">Type something here</h5></a>
+                            <a href="articulos.html"><img src="img/articulo08.png" alt="lorem10ndkdjbfdfjbkdbjdfbkfbdk" class="img-fluid" width="100%"></a>
+
+                        </div>
+                        <div class="col-12 col-lg-7 introArticulo">
+                            <a href="articulos.html"><h6 class="d-none d-lg-block">Type something here</h6></a>
+                            <p class="my-2 my-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Officia voluptatibus nobis, quo mollitia qui totam, eius,dignissimos incidunt 
+                                est tenetur numquam laudantium animi eum quis dolor amet quaerat. Ad, voluptates.</p>
+                            <a href="articulos.html" class="float-right">Leer mas</a>
+                            <div class="fecha">16.09.2020</div>
+                            
+                        </div>
+                    </div>
+                    <hr class="mb-2 mb-lg-5" style="border: 1px solid #746784;">
+                    <!--ARTICULO 02-->
+                    <div class="row">
+                        <div class="col-12 col-lg-5">
+                            <a href="articulos.html"><h5 class="d-block d-lg-none py-5">Type something here</h5></a>
+                            <a href="articulos.html"><img src="img/articulo08.png" alt="lorem10ndkdjbfdfjbkdbjdfbkfbdk" class="img-fluid" width="100%"></a>
+
+                        </div>
+                        <div class="col-12 col-lg-7 introArticulo">
+                            <a href="articulos.html"><h6 class="d-none d-lg-block">Type something here</h6></a>
+                            <p class="my-2 my-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Officia voluptatibus nobis, quo mollitia qui totam, eius,dignissimos incidunt 
+                                est tenetur numquam laudantium animi eum quis dolor amet quaerat. Ad, voluptates.</p>
+                            <a href="articulos.html" class="float-right">Leer mas</a>
+                            <div class="fecha">16.09.2020</div>
+                            
+                        </div>
+                    </div>
+                    <hr class="mb-2 mb-lg-5" style="border: 1px solid #746784;">
+                    <div class="row">
+                        <div class="col-12 col-lg-5">
+                            <a href="articulos.html"><h5 class="d-block d-lg-none py-5">Type something here</h5></a>
+                            <a href="articulos.html"><img src="img/articulo08.png" alt="lorem10ndkdjbfdfjbkdbjdfbkfbdk" class="img-fluid" width="100%"></a>
+
+                        </div>
+                        <div class="col-12 col-lg-7 introArticulo">
+                            <a href="articulos.html"><h6 class="d-none d-lg-block">Type something here</h6></a>
+                            <p class="my-2 my-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Officia voluptatibus nobis, quo mollitia qui totam, eius,dignissimos incidunt 
+                                est tenetur numquam laudantium animi eum quis dolor amet quaerat. Ad, voluptates.</p>
+                            <a href="articulos.html" class="float-right">Leer mas</a>
+                            <div class="fecha">16.09.2020</div>
+                            
+                        </div>
+                    </div>
+                    <hr class="mb-2 mb-lg-5" style="border: 1px solid #746784;">
+
+                    <div class="container d-none d-md-block">
+                        <ul class="pagination justify-content-center"></ul>
+                    </div>
+
+                </div>
+                <!--COLUMNA DERECHA-->
+                <div class="col-12 col-md-4 pt-md-5 pt-lg-0 d-none d-md-block col-lg-3">
+                    <!--SOBRE MI-->
+                    <div class="sobreMi">
+                        <h4>Artículos</h4>
+                        <img src="img/articulo06.png" alt="lorem10ndkdjbfdfjbkdbjdfbkfbdk" class="img-fluid my-1">
+                        <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Tempora officia laboriosam fugiat ut aperiam, harum adipisci 
+                            quae praesentium reiciendis, nam ducimus</p>
+                    </div>
+                    <!--PUBLICIDAD-->
+                    <div class="my-4">
+                        <img src="img/articulo06.png" alt="lorem10ndkdjbfdfjbkdbjdfbkfbdk" class="img-fluid">
+                        <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Tempora officia laboriosam fugiat ut aperiam, harum adipisci 
+                            quae praesentium reiciendis, nam ducimus</p>
+                    </div>
+                    <div class="my-4">
+                        <img src="img/articulo06.png" alt="lorem10ndkdjbfdfjbkdbjdfbkfbdk" class="img-fluid">
+                        <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Tempora officia laboriosam fugiat ut aperiam, harum adipisci 
+                            quae praesentium reiciendis, nam ducimus</p>
+                    </div>
+                    <div class="my-4">
+                        <img src="img/articulo06.png" alt="lorem10ndkdjbfdfjbkdbjdfbkfbdk" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!--FOOTER-->
+    <footer class="container-fluid py-5 d-none d-md-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-6">
+                    <div class="p-1 bg-white gridFooter">
+                        <div class="container p-0">
+                            <div class="d-flex">
+                                <div class="d-flex flex-column columna1">
+                                    <figure class="p-2 m-0 photo1" vinculo="categorias.html">
+                                        <p class="text-uppercase p-1 p-md-3 p-xl-1">Imagen</p>
+                                    </figure>
+                                    <figure class="p-2 m-0 photo2" vinculo="categorias.html">
+                                        <p class="text-uppercase p-1 p-md-3 p-xl-1">Imagen</p>
+                                    </figure>
+                                   
+                                </div>
+                                
+                                <div class="d-flex flex-column flex-fill columna2">
+                                    <div class="d-block d-md-flex">
+                                        <figure class="p-2 m-0 flex-fill photo3" vinculo="categorias.html">
+                                            <p class="text-uppercase p-1 p-md-3 p-xl-1">Imagen</p>
+                                        </figure>
+                                        <figure class="p-2 m-0 flex-fill photo4" vinculo="categorias.html">
+                                            <p class="text-uppercase p-1 p-md-3 p-xl-1">Imagen</p>
+                                        </figure>
+                                    </div>
+                                    
+                                    <figure class="p-2 m-0 photo5" vinculo="categorias.html">
+                                        <p class="text-uppercase p-1 p-md-3 p-xl-1">Imagen</p>
+                                    </figure>
+                
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-4 pt-5">
+                    <h6 class="text-white">Registrate</h6>
+                    <div class="input-group my-4">
+                        <input type="text" class="form-control" placeholder="Ingresa email">
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-dark text-white">Inscribirse</span>
+                        </div>
+                    </div>
+                    <div class="p-0 w-100 pt-2">
+                        <ul class="d-flex justify-content-left p-0">
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-facebook-f lead float-left rounded-circle text-white mr-3 mr-sm-4"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-instagram lead float-left rounded-circle text-white mr-3 mr-sm-4"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
