@@ -204,6 +204,18 @@ header .logotipo{
     background-position: center top;
     height: 40px;
 }
+.fechaArticulo{
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    padding: 12px 32px;
+    color: #aaa;
+    font-size: 15px;
+    background: url(../img/globo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60px;
+}
 
 .page-item.active .page-link{
     background: #302b63;
@@ -388,6 +400,16 @@ footer{
         top: -373px;
         height: 35px;
     }
+    .fechaArticulo{
+        top: -7px;
+        left: 15px;
+        padding: 7px 18px;
+        font-size: 11px;
+        height: 40px;
+    }
+    .tituloArticulo{
+        font-size: 20px;
+    }
     .gridFooter figure {
         border-top: 2px solid white;
         border-bottom: 2px solid white;
@@ -440,6 +462,13 @@ footer{
     .fecha{
         top: -417px;
     }
+    .fechaArticulo{
+        top: -6px;
+        left: 15px;
+        padding: 10px 20px;
+        font-size: 15px;
+        height: 50px;
+    }
 }
 /*MOVIL V 320 PX*/
 @media (max-width:575px){
@@ -489,6 +518,19 @@ footer{
     .fecha{
         top: -264px;
         
+    }
+    .fechaArticulo{
+        top: 4px;
+        left: 15px;
+        padding: 6px 9px;
+        font-size: 10px;
+        height: 30px;
+    }
+    .tituloArticulo{
+        font-size: 18px;
+    }
+    .textoArticulo{
+        font-size: 14px;
     }
     
 }
